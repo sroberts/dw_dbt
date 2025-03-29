@@ -6,6 +6,5 @@
 
 SELECT
 {{ dbt_utils.generate_surrogate_key(['Event_Name']) }} as Event_Key,
-
-
-FROM {{ source('samssubs_landing_web', 'Web_Traffic_Events') }}
+Event_Name
+FROM {{ source('samssubs_landing_web', 'web_traffic_events') }}

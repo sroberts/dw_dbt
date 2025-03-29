@@ -13,5 +13,5 @@ dp.PRODUCTCALORIES as ProductCals,
 ds.SandwichID,
 ds.SandwichLength,
 ds.SandwichBread,
-FROM {{ source('insurance_landing', 'product') }} as dp
-JOIN {{ source('insurance_landing', 'sandwich') }} as ds WHERE ds.productid = dp.productid
+FROM {{ source('samssubs_landing', 'product') }} as dp
+JOIN {{ source('samssubs_landing', 'sandwich') }} as ds WHERE ds.productid = dp.productid
