@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: samssubs_landing_web
+    database: scottroberts
+    schema: samssubs_source
+    tables:
+      - name: web_traffic_events
+
+  - name: samssubs_landing
+    database: scottroberts
+    schema: samssubs_source_sams_subs
+    tables:
+      - name: customer
+      - name: employee
+      - name: order
+      - name: orderdetails
+      - name: product
+      - name: sandwich
+      - name: store
