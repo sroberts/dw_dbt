@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: "Customer Dimension Table"
+  - name: dim_date
+    description: "Date Dimension Table"
+  - name: dim_employee
+    description: "Employee Dimension Table"
+  - name: dim_ordermethod
+    description: "Order Method Dimension Table"
+  - name: dim_product
+    description: "Product Dimension Table"
+  - name: dim_store
+    description: "Store Dimension Table"
+  - name: dim_trafficsource
+    description: "Traffic Source Dimension Table"
+  - name: dim_webpage
+    description: "Webpage Dimension Table"
+  - name: dim_event
+    description: "Event Table Table"
+  - name: fact_orderline
+    description: "Order Line Fact Table"
+  - name: fact_webanalytics
+    description: "Web Analytics Fact Table"
